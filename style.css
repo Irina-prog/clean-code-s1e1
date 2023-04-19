@@ -52,7 +52,7 @@ h3 {
   list-style: none;
 }
 
-input,
+.input,
 .button {
   outline: none;
 }
@@ -83,7 +83,7 @@ h3,
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.input_text { /* input[type="text"] */
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -96,7 +96,7 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.input_text:focus { /* input[type="text"]:focus */
   color: #333;
 }
 
@@ -106,7 +106,7 @@ input[type="text"]:focus {
   margin: 0 0 20px;
 }
 
-input#new-task {
+.input#new-task { /* input#new-task */
   width: 318px;
 }
 
@@ -125,7 +125,7 @@ input#new-task {
   vertical-align: middle;
 }
 
-.list-item>input[type="checkbox"] {
+.list-item>.input_checkbox { /*.list-item>input[type="checkbox"] */
   margin: 0 10px;
 }
 
@@ -136,7 +136,7 @@ input#new-task {
   width: 226px;
 }
 
-.list-item>input[type="text"] {
+.list-item>.input_text { /* .list-item>input[type="text"]*/
   width: 226px
 }
 
@@ -157,11 +157,11 @@ input#new-task {
 }
 
 /* Edit Task */
-.list .list-item input[type=text] {
+.list .list-item .input_text { /* .list .list-item input[type=text]*/
   display: none
 }
 
-.list .list-item.editMode input[type=text] {
+.list .list-item.editMode .input_text { /*.list .list-item.editMode input[type=text]  */
   display: inline-block;
   width: 224px
 }
