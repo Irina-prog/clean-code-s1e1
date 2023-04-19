@@ -32,7 +32,7 @@
   margin: 0 auto 0;
 }
 
-.task {
+.label_task .input-ƒ {
   width: 56%;
   display: inline-block;
   flex-grow: 1
@@ -107,7 +107,7 @@ h3,
 }
 
 .input#new-task { /* input#new-task */
-  width: 318px;
+  width: 423px;
 }
 
 /* Task list */
