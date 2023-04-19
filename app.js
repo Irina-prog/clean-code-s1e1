@@ -23,6 +23,7 @@ var createNewTaskElement = function (taskString) {
   var checkBox = document.createElement("input");//checkbx
   //label
   var label = document.createElement("label");//label
+  label.classList.add('label');
   //input (text)
   var editInput = document.createElement("input");//text
   //button.edit
@@ -37,7 +38,7 @@ var createNewTaskElement = function (taskString) {
   var deleteButtonImg = document.createElement("img");//delete button image
 
   label.innerText = taskString;
-  label.className = 'task';
+  label.className = 'label task'; //label.className = 'task';
 
   //Each elements, needs appending
   checkBox.type = "checkbox";
@@ -85,7 +86,7 @@ var editTask = function () {
   var listItem = this.parentNode;
 
   var editInput = listItem.querySelector('input[type=text]');
-  var label = listItem.querySelector("label");
+  var label = listItem.querySelector(".label"); // var label = listItem.querySelector("label");
   var editBtn = listItem.querySelector(".edit");
   var containsClass = listItem.classList.contains("editMode");
   //If class of the parent is .editmode
