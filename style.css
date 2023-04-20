@@ -12,11 +12,11 @@
   text-align: right;
 }
 
-.matrix img {
+.matrix .matrix__img { /*.matrix img */
   width: 100%;
 }
 
-.matrix .more_inf {
+.matrix .matrix__more-info {
   font-family: fantasy, cursive;
 }
 
@@ -26,7 +26,7 @@
   }
 }
 
-.centered-main-page-element {
+.wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -38,7 +38,7 @@
   flex-grow: 1
 }
 
-.task-row-wrapper {
+.add-task__row-wrapper {
   display: flex;
 }
 
@@ -47,7 +47,7 @@
   padding: 0px;
 }
 
-.list-item,
+.list__item,
 h3 {
   list-style: none;
 }
@@ -111,7 +111,7 @@ h3,
 }
 
 /* Task list */
-.list-item {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -121,32 +121,32 @@ h3,
   align-items: center;
 }
 
-.list-item>* {
+.list__item>* {
   vertical-align: middle;
 }
 
-.list-item>.input_checkbox { /*.list-item>input[type="checkbox"] */
+.list__item>.input_checkbox { /*.list__item>input[type="checkbox"] */
   margin: 0 10px;
 }
 
-.list-item>.label {  /* .list-item>label */
+.list__item>.label {  /* .list__item>label */
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list-item>.input_text { /* .list-item>input[type="text"]*/
+.list__item>.input_text { /* .list__item>input[type="text"]*/
   width: 226px
 }
 
-.button.delete img {
+.button.button_delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button.delete img:hover {
+.button.button_delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -157,15 +157,15 @@ h3,
 }
 
 /* Edit Task */
-.list .list-item .input_text { /* .list .list-item input[type=text]*/
+.list .list__item .input_text { /* .list .list__item input[type=text]*/
   display: none
 }
 
-.list .list-item.editMode .input_text { /*.list .list-item.editMode input[type=text]  */
+.list .list__item.item_edit-mode .input_text { /*.list .list__item.item_edit-mode input[type=text]  */
   display: inline-block;
   width: 224px
 }
 
-.list .list-item.editMode .label {  /* .list .list-item.editMode label */
+.list .list__item.item_edit-mode .label {  /* .list .list__item.item_edit-mode label */
   display: none;
 }

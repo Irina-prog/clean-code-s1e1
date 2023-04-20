@@ -12,47 +12,50 @@
 
 <body class="page">
   <article class="matrix">
-    <img src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix">
-    <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <img class="matrix__img" src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix">
+    <a class="matrix__more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </article>
-  <main class="centered-main-page-element">
-    <section>
-      <p id="topSectionForAddingElementToList">
+  <main class="wrapper">
+    <section class="add-task">
         <label for="label" class="label label_new-task">Add Item</label> <!-- new-task -->
-      <div class="task-row-wrapper">
-        <input id="new-task" class="input input_text input-task" type="text"> <!-- class="task"  -->
-        <button class="button">Add</button>
-      </div>
-      </p>
+        <div class="add-task__row-wrapper">
+          <input id="new-task" class="input input_text input-task" type="text"> <!-- class="task"  -->
+          <button class="button">Add</button>
+        </div>
     </section>
-    <section>
+    <section class="todo">
       <h3>Todo</h3>
       <ul class="list" id="incompleteTasks">
-        <li class="list-item">
+        <li class="list__item">
           <input type="checkbox" class="input input_checkbox"> <!--  -->
           <label class="label label_task">Pay Bills</label> <!-- task -->
           <input type="text" class="input input_text input-task"> <!-- class="task"  -->
-          <button class="button edit">Edit</button>
-          <button class="button delete"><img src="./remove.svg"></button>
+          <button class="button button_edit">Edit</button>
+          <button class="button button_delete">
+            <img src="./remove.svg">
+          </button>
         </li>
-        <li class="list-item editMode">
+        <li class="list__item item_edit-mode">
           <input type="checkbox" class="input input_checkbox"> <!--  -->
           <label class="label label_task">Go Shopping</label> <!-- task -->
           <input type="text" value="Go Shopping" class="input input_text input-task"> <!-- class="task"  -->
-          <button class="button edit">Save</button>
-          <button class="button delete"><img src="./remove.svg"></button>
+          <button class="button button_edit">Save</button>
+          <button class="button button_delete">
+            <img src="./remove.svg"></button>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="completed">
       <h3>Completed</h3>
       <ul class="list" id="completed-tasks">
-        <li class="list-item">
+        <li class="list__item">
           <input type="checkbox" class="input input_checkbox" checked> <!-- -->
           <label class="label label_task">See the Doctor</label> <!-- task -->
           <input type="text" class="input input_text input-task"> <!-- class="task"  -->
-          <button class="button edit">Edit</button>
-          <button class="button delete"><img src="./remove.svg"></button>
+          <button class="button button_edit">Edit</button>
+          <button class="button button_delete">
+            <img src="./remove.svg">
+          </button>
         </li>
       </ul>
     </section>
