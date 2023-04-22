@@ -1,4 +1,5 @@
 /* Basic Style */
+
 .page {
   background-color: #f8f8f8;
   color: #333;
@@ -20,7 +21,7 @@
   font-family: fantasy, cursive;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .matrix {
     text-align: center;
   }
@@ -29,7 +30,7 @@
 .wrapper {
   display: block;
   width: 500px;
-  margin: 0 auto 0;
+  margin: 0 auto;
 }
 
 .label_task .input-ƒ {
@@ -45,7 +46,7 @@
 
 .list {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 
 .list__item,
@@ -60,7 +61,7 @@ h3 {
 
 .button {
   background: none;
-  border: 0px;
+  border: 0;
   color: #888;
   font-size: 15px;
   width: 60px;
@@ -146,12 +147,6 @@ h3,
   transform: rotateZ(0);
 }
 
-/* Completed */
-.list#completed-tasks .label {
-  text-decoration: line-through;
-  color: #888;
-}
-
 /* Edit Task */
 .list .list__item .input_text {
   display: none;
@@ -165,3 +160,10 @@ h3,
 .list .list__item.item_edit-mode .label {
   display: none;
 }
+
+/* Completed */
+.list#completed-tasks .label {
+  text-decoration: line-through;
+  color: #888;
+}
+
