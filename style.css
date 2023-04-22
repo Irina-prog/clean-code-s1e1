@@ -50,7 +50,8 @@
 }
 
 .list__item,
-h3 {
+.todo__title,
+.completed__title {
   list-style: none;
 }
 
@@ -74,7 +75,8 @@ h3 {
 }
 
 /* Heading */
-h3,
+.todo__title,
+.completed__title,
 .label_new-task {
   color: #333;
   font-weight: 700;
